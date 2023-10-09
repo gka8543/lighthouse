@@ -1,19 +1,19 @@
-Thanks to our new contributors 👽🐷🐰🐯🐻! 
-
- <a name="11.2.0"></a>
+<a name="11.2.0"></a>
 # 11.2.0 (2023-10-09)
 [Full Changelog](https://github.com/GoogleChrome/lighthouse/compare/v11.1.0...v11.2.0)
 
-~~ TODO: https://chromiumdash.appspot.com/schedule ~~
-We expect this release to ship in the DevTools of [Chrome XX](https://chromiumdash.appspot.com/schedule), and to PageSpeed Insights within 2 weeks.
+We expect this release to ship in the DevTools of [Chrome 120](https://chromiumdash.appspot.com/schedule), and to PageSpeed Insights within 2 weeks.
 
 ## Notable Changes
-~~ TODO: Move notable changes here ~~
 
+This update includes an overhaul to the performance category. Performance insights are now scored and prioritized based on their estimated impact to the performance metrics. Additionally, the performance score gauge includes more detailed information about how each metric affects the score.
+
+* core: align performance audit score with metric savings ([#15447](https://github.com/GoogleChrome/lighthouse/pull/15447))
+* report: sort performance audits based on impact ([#15445](https://github.com/GoogleChrome/lighthouse/pull/15445))
+* report: add explodey gauge for performance category ([#15396](https://github.com/GoogleChrome/lighthouse/pull/15396))
 
 ## Core
 
-* align performance audit score with metric savings ([#15447](https://github.com/GoogleChrome/lighthouse/pull/15447))
 * asset-saver: fix handling of undefined trace ([#15451](https://github.com/GoogleChrome/lighthouse/pull/15451))
 * csp: use monospace for technical terms in strings ([#15511](https://github.com/GoogleChrome/lighthouse/pull/15511))
 * driver: attach to worker targets ([#14212](https://github.com/GoogleChrome/lighthouse/pull/14212))
@@ -29,8 +29,6 @@ We expect this release to ship in the DevTools of [Chrome XX](https://chromiumda
 
 ## Report
 
-* sort performance audits based on impact ([#15445](https://github.com/GoogleChrome/lighthouse/pull/15445))
-* add explodey gauge for performance category ([#15396](https://github.com/GoogleChrome/lighthouse/pull/15396))
 * redefine gauge percentage positioning ([#15486](https://github.com/GoogleChrome/lighthouse/pull/15486))
 
 ## Deps
